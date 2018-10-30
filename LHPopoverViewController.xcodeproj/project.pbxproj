@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		716B022B21883A7D0030C963 /* LHConvenientMethods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716B022A21883A7D0030C963 /* LHConvenientMethods.framework */; };
 		71BB0514218809A200F3C8E0 /* LHPopoverViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 71BB0512218809A200F3C8E0 /* LHPopoverViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71BB051B21880A1500F3C8E0 /* LHPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BB051A21880A1500F3C8E0 /* LHPopoverViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		716B022A21883A7D0030C963 /* LHConvenientMethods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LHConvenientMethods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BB050F218809A200F3C8E0 /* LHPopoverViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LHPopoverViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71BB0512218809A200F3C8E0 /* LHPopoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHPopoverViewController.h; sourceTree = "<group>"; };
 		71BB0513218809A200F3C8E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -23,17 +25,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716B022B21883A7D0030C963 /* LHConvenientMethods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		716B022921883A7D0030C963 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				716B022A21883A7D0030C963 /* LHConvenientMethods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		71BB0505218809A200F3C8E0 = {
 			isa = PBXGroup;
 			children = (
 				71BB0511218809A200F3C8E0 /* LHPopoverViewController */,
 				71BB0510218809A200F3C8E0 /* Products */,
+				716B022921883A7D0030C963 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

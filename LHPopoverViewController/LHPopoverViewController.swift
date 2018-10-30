@@ -9,20 +9,20 @@
 import UIKit
 import LHConvenientMethods
 
-public class LHPopoverViewController: UIViewController {
+open class LHPopoverViewController: UIViewController {
     
     let containedView: UIView
     
-    public override func loadView() {
+    open override func loadView() {
         view = containedView
     }
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         preferredContentSize = containedView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
     }
     
-    public override func viewDidLayoutSubviews() {
+    open override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         if preferredContentSize != containedView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize) {
             preferredContentSize = containedView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
@@ -39,7 +39,7 @@ public class LHPopoverViewController: UIViewController {
         }
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
