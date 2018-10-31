@@ -144,3 +144,13 @@ extension LHMenu: UITableViewDataSource, UITableViewDelegate {
     }
     
 }
+
+extension UIViewController {
+    
+    open func presentUndoMenu(undoManager: UndoManager, popoverSource: LHPopoverSource) {
+        let popoverVC = LHPopoverViewController(popoverSource: popoverSource)
+        popoverVC.addManagedView(LHMenu(undoManager: undoManager))
+        present(popoverVC, animated: true, completion: nil)
+    }
+    
+}
