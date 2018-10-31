@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <LHConvenientMethods/LHConvenientMethods.h>
 
 //! Project version number for LHPopoverKit.
 FOUNDATION_EXPORT double LHPopoverKitVersionNumber;

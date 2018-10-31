@@ -6,19 +6,27 @@
 //  Copyright © 2018 narrativesaw. All rights reserved.
 //
 
-import UIKit
-import LHConvenientMethods
-
 open class LHPopoverViewController: UIViewController {
     
-    let containedView: UIView
+    private lazy var containedView = UIStackView(arrangedSubviews: [])
+    
+    open var axis: NSLayoutConstraint.Axis {
+        get {
+            return containedView.axis
+        }
+        set {
+            containedView.axis = newValue
+        }
+    }
     
     open override func loadView() {
+        containedView.axis = .vertical
         view = containedView
     }
     
     open override func viewDidLoad() {
         super.viewDidLoad()
+        
         preferredContentSize = containedView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
     }
     
@@ -29,8 +37,7 @@ open class LHPopoverViewController: UIViewController {
         }
     }
 
-    public init(containedView: UIView, popoverSource: LHPopoverSource) {
-        self.containedView = containedView
+    public init(popoverSource: LHPopoverSource) {
         super.init(nibName: nil, bundle: nil)
         modalPresentationStyle = .popover
         if let popoverController = popoverPresentationController {
@@ -41,6 +48,10 @@ open class LHPopoverViewController: UIViewController {
     
     required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    open func addManagedView(_ managedView: UIView) {
+        containedView.addArrangedSubview(managedView)
     }
     
 }

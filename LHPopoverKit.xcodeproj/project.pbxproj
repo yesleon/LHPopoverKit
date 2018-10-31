@@ -8,21 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		716B022B21883A7D0030C963 /* LHConvenientMethods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716B022A21883A7D0030C963 /* LHConvenientMethods.framework */; };
-		71AA1F8B21896B1F00B5FC69 /* LHMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AA1F8921896B1E00B5FC69 /* LHMenuController.swift */; };
-		71AA1F8C21896B1F00B5FC69 /* LHUndoMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AA1F8A21896B1F00B5FC69 /* LHUndoMenuController.swift */; };
-		71BB0514218809A200F3C8E0 /* LHPopoverViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 71BB0512218809A200F3C8E0 /* LHPopoverViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		71BB0514218809A200F3C8E0 /* LHPopoverKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 71BB0512218809A200F3C8E0 /* LHPopoverKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		71BB051B21880A1500F3C8E0 /* LHPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BB051A21880A1500F3C8E0 /* LHPopoverViewController.swift */; };
+		71C3956421898659005D04F7 /* LHMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3956321898659005D04F7 /* LHMenu.swift */; };
+		71C3956C21898BA4005D04F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3956B21898BA4005D04F7 /* AppDelegate.swift */; };
+		71C3956E21898BA4005D04F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3956D21898BA4005D04F7 /* ViewController.swift */; };
+		71C3957121898BA4005D04F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C3956F21898BA4005D04F7 /* Main.storyboard */; };
+		71C3957321898BA9005D04F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71C3957221898BA9005D04F7 /* Assets.xcassets */; };
+		71C3957621898BA9005D04F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C3957421898BA9005D04F7 /* LaunchScreen.storyboard */; };
+		71C3957B21898BB6005D04F7 /* LHMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3956321898659005D04F7 /* LHMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		710AB2262189700F0044E1A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		716B022A21883A7D0030C963 /* LHConvenientMethods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LHConvenientMethods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		71AA1F8921896B1E00B5FC69 /* LHMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHMenuController.swift; sourceTree = "<group>"; };
-		71AA1F8A21896B1F00B5FC69 /* LHUndoMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHUndoMenuController.swift; sourceTree = "<group>"; };
 		71BB050F218809A200F3C8E0 /* LHPopoverKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LHPopoverKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		71BB0512218809A200F3C8E0 /* LHPopoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHPopoverViewController.h; sourceTree = "<group>"; };
+		71BB0512218809A200F3C8E0 /* LHPopoverKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LHPopoverKit.h; sourceTree = "<group>"; };
 		71BB0513218809A200F3C8E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71BB051A21880A1500F3C8E0 /* LHPopoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LHPopoverViewController.swift; sourceTree = "<group>"; };
+		71C3956321898659005D04F7 /* LHMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LHMenu.swift; sourceTree = "<group>"; };
+		71C3956921898BA4005D04F7 /* LHPopoverKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LHPopoverKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		71C3956B21898BA4005D04F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		71C3956D21898BA4005D04F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71C3957021898BA4005D04F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		71C3957221898BA9005D04F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		71C3957521898BA9005D04F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		71C3957721898BA9005D04F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				716B022B21883A7D0030C963 /* LHConvenientMethods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71C3956621898BA4005D04F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +68,7 @@
 			children = (
 				710AB2262189700F0044E1A3 /* README.md */,
 				71BB0511218809A200F3C8E0 /* LHPopoverKit */,
+				71C3956A21898BA4005D04F7 /* LHPopoverKitExample */,
 				71BB0510218809A200F3C8E0 /* Products */,
 				716B022921883A7D0030C963 /* Frameworks */,
 			);
@@ -59,6 +78,7 @@
 			isa = PBXGroup;
 			children = (
 				71BB050F218809A200F3C8E0 /* LHPopoverKit.framework */,
+				71C3956921898BA4005D04F7 /* LHPopoverKitExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -66,13 +86,25 @@
 		71BB0511218809A200F3C8E0 /* LHPopoverKit */ = {
 			isa = PBXGroup;
 			children = (
-				71BB0512218809A200F3C8E0 /* LHPopoverViewController.h */,
+				71BB0512218809A200F3C8E0 /* LHPopoverKit.h */,
 				71BB051A21880A1500F3C8E0 /* LHPopoverViewController.swift */,
-				71AA1F8921896B1E00B5FC69 /* LHMenuController.swift */,
-				71AA1F8A21896B1F00B5FC69 /* LHUndoMenuController.swift */,
+				71C3956321898659005D04F7 /* LHMenu.swift */,
 				71BB0513218809A200F3C8E0 /* Info.plist */,
 			);
 			path = LHPopoverKit;
+			sourceTree = "<group>";
+		};
+		71C3956A21898BA4005D04F7 /* LHPopoverKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				71C3956B21898BA4005D04F7 /* AppDelegate.swift */,
+				71C3956D21898BA4005D04F7 /* ViewController.swift */,
+				71C3956F21898BA4005D04F7 /* Main.storyboard */,
+				71C3957221898BA9005D04F7 /* Assets.xcassets */,
+				71C3957421898BA9005D04F7 /* LaunchScreen.storyboard */,
+				71C3957721898BA9005D04F7 /* Info.plist */,
+			);
+			path = LHPopoverKitExample;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,7 +114,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71BB0514218809A200F3C8E0 /* LHPopoverViewController.h in Headers */,
+				71BB0514218809A200F3C8E0 /* LHPopoverKit.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,18 +139,39 @@
 			productReference = 71BB050F218809A200F3C8E0 /* LHPopoverKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		71C3956821898BA4005D04F7 /* LHPopoverKitExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 71C3957821898BA9005D04F7 /* Build configuration list for PBXNativeTarget "LHPopoverKitExample" */;
+			buildPhases = (
+				71C3956521898BA4005D04F7 /* Sources */,
+				71C3956621898BA4005D04F7 /* Frameworks */,
+				71C3956721898BA4005D04F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LHPopoverKitExample;
+			productName = LHPopoverKitExample;
+			productReference = 71C3956921898BA4005D04F7 /* LHPopoverKitExample.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		71BB0506218809A200F3C8E0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = narrativesaw;
 				TargetAttributes = {
 					71BB050E218809A200F3C8E0 = {
 						CreatedOnToolsVersion = 10.0;
 						LastSwiftMigration = 1000;
+					};
+					71C3956821898BA4005D04F7 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -128,6 +181,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 71BB0505218809A200F3C8E0;
 			productRefGroup = 71BB0510218809A200F3C8E0 /* Products */;
@@ -135,6 +189,7 @@
 			projectRoot = "";
 			targets = (
 				71BB050E218809A200F3C8E0 /* LHPopoverKit */,
+				71C3956821898BA4005D04F7 /* LHPopoverKitExample */,
 			);
 		};
 /* End PBXProject section */
@@ -147,6 +202,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		71C3956721898BA4005D04F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71C3957621898BA9005D04F7 /* LaunchScreen.storyboard in Resources */,
+				71C3957321898BA9005D04F7 /* Assets.xcassets in Resources */,
+				71C3957121898BA4005D04F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -154,13 +219,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71AA1F8B21896B1F00B5FC69 /* LHMenuController.swift in Sources */,
+				71C3956421898659005D04F7 /* LHMenu.swift in Sources */,
 				71BB051B21880A1500F3C8E0 /* LHPopoverViewController.swift in Sources */,
-				71AA1F8C21896B1F00B5FC69 /* LHUndoMenuController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71C3956521898BA4005D04F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				71C3956E21898BA4005D04F7 /* ViewController.swift in Sources */,
+				71C3957B21898BB6005D04F7 /* LHMenu.swift in Sources */,
+				71C3956C21898BA4005D04F7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		71C3956F21898BA4005D04F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71C3957021898BA4005D04F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		71C3957421898BA9005D04F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				71C3957521898BA9005D04F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		71BB0515218809A200F3C8E0 /* Debug */ = {
@@ -342,6 +435,44 @@
 			};
 			name = Release;
 		};
+		71C3957921898BA9005D04F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3ER26RU8S;
+				INFOPLIST_FILE = LHPopoverKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.narrativesaw.LHPopoverKitExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		71C3957A21898BA9005D04F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K3ER26RU8S;
+				INFOPLIST_FILE = LHPopoverKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.narrativesaw.LHPopoverKitExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -359,6 +490,15 @@
 			buildConfigurations = (
 				71BB0518218809A200F3C8E0 /* Debug */,
 				71BB0519218809A200F3C8E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		71C3957821898BA9005D04F7 /* Build configuration list for PBXNativeTarget "LHPopoverKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				71C3957921898BA9005D04F7 /* Debug */,
+				71C3957A21898BA9005D04F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
