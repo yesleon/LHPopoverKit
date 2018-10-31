@@ -15,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		710AB2262189700F0044E1A3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		716B022A21883A7D0030C963 /* LHConvenientMethods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = LHConvenientMethods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		71AA1F8921896B1E00B5FC69 /* LHMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHMenuController.swift; sourceTree = "<group>"; };
 		71AA1F8A21896B1F00B5FC69 /* LHUndoMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LHUndoMenuController.swift; sourceTree = "<group>"; };
@@ -47,6 +48,7 @@
 		71BB0505218809A200F3C8E0 = {
 			isa = PBXGroup;
 			children = (
+				710AB2262189700F0044E1A3 /* README.md */,
 				71BB0511218809A200F3C8E0 /* LHPopoverKit */,
 				71BB0510218809A200F3C8E0 /* Products */,
 				716B022921883A7D0030C963 /* Frameworks */,
