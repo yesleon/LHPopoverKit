@@ -56,6 +56,26 @@ open class LHMenu: UIScrollView {
         }
     }
     
+    public convenience init(undoManager: UndoManager) {
+        self.init()
+        addConstraint(.init(item: self, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 240))
+        func updateActions(undoManager: UndoManager) {
+            actions = [
+                .init(title: undoManager.undoMenuItemTitle, isEnabled: undoManager.canUndo, handler: { action in
+                    undoManager.undo()
+                    updateActions(undoManager: undoManager)
+                    return nil
+                }),
+                .init(title: undoManager.redoMenuItemTitle, isEnabled: undoManager.canRedo, handler: { action in
+                    undoManager.redo()
+                    updateActions(undoManager: undoManager)
+                    return nil
+                }),
+            ]
+        }
+        updateActions(undoManager: undoManager)
+    }
+    
     private func initialize() {
         translatesAutoresizingMaskIntoConstraints = true
         delaysContentTouches = false
