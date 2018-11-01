@@ -8,6 +8,8 @@
 
 open class LHPopoverViewController: UIViewController {
     
+    public static var backgroundColor: UIColor?
+    
     private lazy var containedView = UIStackView(arrangedSubviews: [])
     
     open var axis: NSLayoutConstraint.Axis {
@@ -43,6 +45,7 @@ open class LHPopoverViewController: UIViewController {
         if let popoverController = popoverPresentationController {
             popoverController.delegate = self
             popoverController.setPopoverSource(popoverSource)
+            popoverController.backgroundColor = LHPopoverViewController.backgroundColor
         }
     }
     
