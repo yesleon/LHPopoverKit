@@ -59,8 +59,9 @@ open class LHMenu: UIScrollView {
     public convenience init(undoManager: UndoManager) {
         self.init()
         addConstraint(.init(item: self, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 240))
+        weak var weakSelf = self
         func updateActions(undoManager: UndoManager) {
-            actions = [
+            weakSelf?.actions = [
                 .init(title: undoManager.undoMenuItemTitle, isEnabled: undoManager.canUndo, handler: { action in
                     undoManager.undo()
                     updateActions(undoManager: undoManager)
