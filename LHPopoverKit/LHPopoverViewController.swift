@@ -39,13 +39,14 @@ open class LHPopoverViewController: UIViewController {
         }
     }
 
-    public init(popoverSource: LHPopoverSource) {
+    public init(popoverSource: LHPopoverSource, permittedArrowDirections: UIPopoverArrowDirection = .any) {
         super.init(nibName: nil, bundle: nil)
         modalPresentationStyle = .popover
         if let popoverController = popoverPresentationController {
             popoverController.delegate = self
             popoverController.setPopoverSource(popoverSource)
             popoverController.backgroundColor = LHPopoverViewController.backgroundColor
+            popoverController.permittedArrowDirections = permittedArrowDirections
         }
     }
     
