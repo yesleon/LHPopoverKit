@@ -24,9 +24,9 @@ open class LHMenu: UIScrollView {
         return tableView
     }()
     
-    public struct Action {
+    public class Action {
         
-        public typealias Handler = (Action) -> Action?
+        public typealias Handler = (Action) -> Void
         
         fileprivate var title: String
         fileprivate var isEnabled: Bool
@@ -39,10 +39,10 @@ open class LHMenu: UIScrollView {
     }
     
     open var actions: [Action] = [
-        Action(title: "asdf", isEnabled: true, handler: { action in return nil }),
-        Action(title: "aaaa", isEnabled: true, handler: { action in return nil }),
-        Action(title: "bbbb", isEnabled: true, handler: { action in return nil }),
-        Action(title: "cccc", isEnabled: true, handler: { action in return nil }),
+        Action(title: "asdf", isEnabled: true, handler: { action in }),
+        Action(title: "aaaa", isEnabled: true, handler: { action in }),
+        Action(title: "bbbb", isEnabled: true, handler: { action in }),
+        Action(title: "cccc", isEnabled: true, handler: { action in }),
         ] {
         didSet {
             tableView.reloadData()
@@ -58,19 +58,17 @@ open class LHMenu: UIScrollView {
     
     public convenience init(undoManager: UndoManager) {
         self.init()
-        addConstraint(.init(item: self, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 240))
+        bounds.size.width = 200
         weak var weakSelf = self
         func updateActions(undoManager: UndoManager) {
             weakSelf?.actions = [
                 .init(title: undoManager.undoMenuItemTitle, isEnabled: undoManager.canUndo, handler: { action in
                     undoManager.undo()
                     updateActions(undoManager: undoManager)
-                    return nil
                 }),
                 .init(title: undoManager.redoMenuItemTitle, isEnabled: undoManager.canRedo, handler: { action in
                     undoManager.redo()
                     updateActions(undoManager: undoManager)
-                    return nil
                 }),
             ]
         }
@@ -139,9 +137,8 @@ extension LHMenu: UITableViewDataSource, UITableViewDelegate {
     }
     
     open func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let action = actions[indexPath.row].handler(actions[indexPath.row]) {
-            actions[indexPath.row] = action
-        }
+        actions[indexPath.row].handler(actions[indexPath.row])
+        tableView.reloadData()
     }
     
 }

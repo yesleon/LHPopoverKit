@@ -21,6 +21,10 @@ open class LHPopoverViewController: UIViewController {
         }
     }
     
+    open override var canBecomeFirstResponder: Bool {
+        return true
+    }
+    
     open override func loadView() {
         containedView.axis = .vertical
         view = containedView
@@ -37,6 +41,16 @@ open class LHPopoverViewController: UIViewController {
         if preferredContentSize != containedView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize) {
             preferredContentSize = containedView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize)
         }
+    }
+    
+    open override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        becomeFirstResponder()
+    }
+    
+    open override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        resignFirstResponder()
     }
 
     public init(popoverSource: LHPopoverSource, permittedArrowDirections: UIPopoverArrowDirection = .any) {
