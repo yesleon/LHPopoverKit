@@ -28,10 +28,10 @@ open class LHMenu: UIScrollView {
         
         public typealias Handler = (Action) -> Void
         
-        fileprivate var title: String
-        fileprivate var isEnabled: Bool
-        fileprivate var handler: Handler
-        public init(title: String, isEnabled: Bool, handler: @escaping Handler) {
+        public var title: () -> String
+        public var isEnabled: () -> Bool
+        public var handler: Handler
+        public init(title: @autoclosure @escaping () -> String, isEnabled: @autoclosure @escaping () -> Bool, handler: @escaping Handler) {
             self.title = title
             self.isEnabled = isEnabled
             self.handler = handler
@@ -118,18 +118,18 @@ extension LHMenu: UITableViewDataSource, UITableViewDelegate {
         let action = actions[indexPath.row]
         cell.textLabel?.textAlignment = .center
         
-        cell.textLabel?.text = action.title
-        cell.textLabel?.textColor = action.isEnabled ? tintColor : #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
+        cell.textLabel?.text = action.title()
+        cell.textLabel?.textColor = action.isEnabled() ? tintColor : #colorLiteral(red: 0.6000000238, green: 0.6000000238, blue: 0.6000000238, alpha: 1)
         
         return cell
     }
     
     open func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
-        return actions[indexPath.row].isEnabled
+        return actions[indexPath.row].isEnabled()
     }
     
     open func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
-        if actions[indexPath.row].isEnabled {
+        if actions[indexPath.row].isEnabled() {
             return indexPath
         } else {
             return nil
