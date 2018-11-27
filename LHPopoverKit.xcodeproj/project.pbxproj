@@ -17,6 +17,7 @@
 		71C3957321898BA9005D04F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71C3957221898BA9005D04F7 /* Assets.xcassets */; };
 		71C3957621898BA9005D04F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71C3957421898BA9005D04F7 /* LaunchScreen.storyboard */; };
 		71C3957B21898BB6005D04F7 /* LHMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71C3956321898659005D04F7 /* LHMenu.swift */; };
+		71E691FD21AD304000F37ADE /* UIPopoverController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E691FC21AD304000F37ADE /* UIPopoverController+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		71C3957221898BA9005D04F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		71C3957521898BA9005D04F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71C3957721898BA9005D04F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71E691FC21AD304000F37ADE /* UIPopoverController+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPopoverController+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				71BB0512218809A200F3C8E0 /* LHPopoverKit.h */,
+				71E691FC21AD304000F37ADE /* UIPopoverController+.swift */,
 				71BB051A21880A1500F3C8E0 /* LHPopoverViewController.swift */,
 				71C3956321898659005D04F7 /* LHMenu.swift */,
 				71BB0513218809A200F3C8E0 /* Info.plist */,
@@ -220,6 +223,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71C3956421898659005D04F7 /* LHMenu.swift in Sources */,
+				71E691FD21AD304000F37ADE /* UIPopoverController+.swift in Sources */,
 				71BB051B21880A1500F3C8E0 /* LHPopoverViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
