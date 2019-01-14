@@ -9,7 +9,7 @@
 import Foundation
 
 public enum LHPopoverSource {
-    case barButtonItem(UIBarButtonItem), view(UIView, withRect: CGRect)
+    case barButtonItem(UIBarButtonItem), viewWithRect(UIView, CGRect), view(UIView)
 }
 
 extension UIPopoverPresentationController {
@@ -18,9 +18,12 @@ extension UIPopoverPresentationController {
         switch source {
         case .barButtonItem(let item):
             barButtonItem = item
-        case let .view(sourceView, withRect: sourceRect):
+        case let .viewWithRect(sourceView, sourceRect):
             self.sourceView = sourceView
             self.sourceRect = sourceRect
+        case .view(let sourceView):
+            self.sourceView = sourceView
+            self.sourceRect = sourceView.bounds
         }
     }
     
